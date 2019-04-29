@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Cnversor</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <style>
+    body{
+        background-image: url(img/bg4.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100px;
+       }
+
+       input {	
+          display:block;
+          width:100%;
+          border-radius:4px;
+          -webkit-border-radius:4px;
+          -moz-border-radius:4px;
+          background-color:#17353d71;
+          color:rgb(255, 255, 255);	
+          border:1px solid #9E9E9E;
+          padding:10px;	
+          margin-bottom:25px;
+        }
+        h2 {
+          color: white;
+        }
+        label{
+          color: white;
+        }
+    </style>
+    <div class="container">
+      <div class="row justify-content-center ">
+        <div class="col-4 mt-5">
+          <h2 class="">Coversor de moneda</h2>
+          <p>
+            <label for="">Euros</label>
+            <input type="number" id="inputEuros" placeholder="Euros" oninput="eurosDolares(this.value)">
+          </p>
+          <p>
+            <label for="">Dolares</label>
+            <input type="number" id="inputDolares" placeholder="Dolares" oninput="dolaresEuros(this.value)">
+          </p>
+         
+        </div>
+      </div>
+    </div>
+    <script src="js/conversor.js"></script>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
